@@ -1,3 +1,4 @@
+echo Please enter your name/ Vă rugăm introduceți numele:
 set /p name=
 
 :start
@@ -47,3 +48,18 @@ echo Alright. Returning to launcher.
 pause
 goto launchen
 
+:wordprocessor
+echo Not yet linked up to any entry commands.
+echo Possible bug involving spaces may appear.
+echo Poppy Tower Word (alpha1.0)
+title Poppy Tower Word
+@echo off
+echo Type your text here.
+set /p poppytowerinput=
+pause
+echo %poppytowerinput%> PoppyTower.txt
+echo Input overwritten to Poppy Tower Word memomry (PoppyTower.txt)
+echo If you wish to edit your Poppy Tower Word document outside of the program, you can do that by modifying the txt file.
+echo Please note that when you write a new document, unless you make a backup, the current document will be destroyed.
+echo Poppy Tower backups will be introduced in a later version.
+pause
